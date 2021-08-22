@@ -1,38 +1,371 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-container{
+  height: 470px;
 }
+.bg-color{
+  background: linear-gradient(90deg, #7352FF 0%, #7552FF 0.01%, #7352FF 0.02%, #7F52FF 49.48%, #7552FF 99.99%, #7352FF 100%);
+}
+.color{
+  color : #7352FF;
+}
+.img-line{
+  width: 100%;
+  height: 850px;
+}
+.nav-container div:first-child{
+  flex: 0.1;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.nav-container div:nth-child(2){
+  flex: 0.9;
+}
+.jane-info{
+  color: rgb(141, 141, 141);
+  width: 80%;
+  line-height: 25px;
+  letter-spacing: 0.07px;
+}
+.middleSection{
+  max-width: 965px;
+  
+  left: 0;
+  right: 0;
+  padding-left: 100px !important;
+  background-color:#fff;
+  border: 1px solid rgb(214, 214, 214);
+  position: absolute;
+  top: 330px;
+  z-index: 20px;
+}
+.browse-offering{
+  margin-top: 100px !important;
+  margin-bottom: 40px;
+}
+.bordr-color{
+  border: 1.5px solid rgb(135, 115, 243);
+}
+.bdr-radius{
+  border-radius: 10px;
+  width: 200px;
+  font-weight: 500;
+}
+.bordr{
+
+
+ display: inline-block;
+ border-radius: 30px; 
+ padding: 3px 20px;
+ font-size: .8rem;
+ font-weight: 400;
+}
+.icondiv{
+  
+  border-bottom: 2px solid rgb(206, 206, 206);
+  padding-bottom: 25px;
+}
+.secondarybackground{
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  font-weight: 400;
+}
+.video-container h5{
+  position: relative;
+}
+.video-container span{
+  position: absolute;
+  top: -7px;
+  
+  
+}
+.video-container div:first-child{
+  flex: 0.4;
+}
+.video-container div:nth-child(2){
+
+  flex: 0.6;
+}
+.letterspacing{
+  letter-spacing: 0.04rem;
+}
+.videoBorder{
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.form-Tag{
+  border: 2px solid rgb(206, 206, 206);
+  border-radius: 10px;
+  padding-top: 25px;
+
+}
+.form-Tag input{
+  flex: 0.9;
+  padding: 5px 15px;
+  font-size: 1.1rem;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 10px;
+  letter-spacing: .7px;
+  font-weight: 400;
+
+}
+.video-card{
+  width: 100%;
+  max-height: 294px;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  display: block;
+}
+.arrow div{
+  margin: 30px 30px;
+
+text-align: center;
+line-height: auto;
+}
+ 
+
+.zoom{
+ animation: zoom-in 0.3s ease-in;
+
+ animation-fill-mode: forwards;
+}
+@keyframes zoom-in{
+  0%{
+    transform: scale(0.9,0.9);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  100%{
+    transform: scale(1,1);
   }
-  to {
-    transform: rotate(360deg);
+
+}
+.videodiv{
+  position: relative;
+}
+.video-info{
+  position: absolute;
+  bottom: 13px;
+  left: 13px;
+}
+.card-section{
+  width: 100%;
+  overflow: hidden;
+}
+div.card-section > div{
+  width: 33%;
+  /* overflow: hidden; */
+}
+.video-info p{
+  margin: 0;
+  font-weight: 500;
+}
+
+.video-info span{
+  border: 1.5px solid rgb(38, 224, 53);
+  display: inline-block;
+  margin-bottom: 10px;
+  
+  font-weight: 500;
+  padding: 1px 18px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: .95rem;
+  letter-spacing: 1px;
+
+}
+.arr{
+  font-size: 2.3rem;
+ 
+}
+.cls{
+  transform: translateX(-30%);
+  overflow: hidden;
+}
+.cls1{
+  transform: translateX(30%);
+
+  overflow: hidden;
+}
+.menu-icon{
+  font-size: 30px;
+}
+.menubar{
+ transform: translateY(30px);
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.menubar li{
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 945px)  {
+
+  .header-container{
+    height: 800px !important;
+  
   }
+  .middleSection{
+    padding-left: 40px !important;
+    top: 250px;
+  }
+  .img-line{
+    max-width: 100%;
+    height: auto;
+
+  }
+  .video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .video-container div:first-child{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .video-container div:nth-child(2) img{
+    max-width: 100%;
+
+  }
+  .offering{
+    margin-top: 60px;
+  }
+
+}
+
+@media only screen and (max-width:800px)
+{
+  .offering{
+    margin-top: 250px;
+   
+  }
+  .videodiv img{
+    width: 100%;
+    transform: scale(1.4,1.4);
+    /* height: 211px !important ; */
+    margin-top: 50px;
+    margin-bottom: 40px;
+   
+  
+  }
+  .card-section{
+    justify-content: space-around;
+  }
+  .cls{
+    transform: translateX(-100%);
+   
+    overflow: hidden;
+  }
+  .cls1{
+    transform: translateX(100%);
+   
+    overflow: hidden;
+  }
+  .video-info{
+    position: absolute;
+    bottom: 17px;
+    left: -36px;
+    font-size: .83rem;
+  }
+  
+}
+@media only screen and (max-width:620px) {
+  .middleSection {
+    padding: 17px 12px ;
+    
+    z-index: 100;
+    background-color: #fff;
+  } 
+
+
+
+  .middleSection button{
+    font-size: .8rem !important;
+    width: 100px;
+    }
+    .profile-pic{
+      width: 90px;
+    }
+    .browse-offering{
+      margin-top: 200px !important;
+    }
+
+    .arr-left{
+      z-index: 1000;
+    }
+
+    .footer{
+      font-size: 1rem;
+    }
+    .footer{
+      display: flex;
+      flex-direction: column !important;
+      padding-top: 10px;
+      
+    }
+    .footer div:first-child{
+      text-align: center;
+    }
+    .footer div:nth-child(2)
+    {
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .videodiv img{
+      margin-top: 70px;
+      transform: scale(2,2) !important;
+      margin-bottom: 70px;
+    }
+    .form-Tag{
+      font-size: .9rem;
+    }
+    .form-Tag input{
+      font-size: .9rem;
+    }
+    .form-Tag button{
+      padding: 0px !important;
+    }
+    .jane-info{
+      width: 100%;
+    }
+    
+    
+
+}    
+
+@media only screen and (max-width:415px)
+{
+  .middleSection{
+    padding: 5px 8px !important;
+  }
+  
+  .profile-pic{
+    width: 70px;
+  }
+  .interest{
+    padding: 2px 8px;
+    font-weight: .9rem;
+  }
+  h5{
+    font-size: 1.1rem;
+  }
+  h5 span{
+    font-size: .9rem !important;
+    
+  }
+ 
+  .browse-offering{
+    margin-top: 100px !important;
+  }
+ 
+  .video-info{
+    left: -50px;
+    bottom: 30px;
+    
+  }
+  
 }
